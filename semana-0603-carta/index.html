@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta — Atividade 06/03</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Carta (várias páginas)</h1>
+  <p class="instrucao">Passe o mouse nos números <strong>1, 2, 3 ou 4</strong> para ver cada página da carta.</p>
+
+  <nav class="seletor" aria-label="Seletor de páginas da carta">
+    <span class="seletor-label">Página:</span>
+    <button type="button" class="pag-btn" data-pag="1">1</button>
+    <button type="button" class="pag-btn" data-pag="2">2</button>
+    <button type="button" class="pag-btn" data-pag="3">3</button>
+    <button type="button" class="pag-btn" data-pag="4">4</button>
+  </nav>
+
+  <div class="folhas">
+    <article class="folha" id="pag-1">
+      <h2>Página 1</h2>
+      <p>Querido diário,</p>
+      <p>Hoje comecei um trabalho novo na faculdade. Estou um pouco nervoso mas animado.</p>
+    </article>
+    <article class="folha" id="pag-2" hidden>
+      <h2>Página 2</h2>
+      <p>A aula foi sobre HTML e CSS. O professor explicou tags e como publicar no GitHub.</p>
+    </article>
+    <article class="folha" id="pag-3" hidden>
+      <h2>Página 3</h2>
+      <p>Cheguei em casa tarde. Jantei macarrão e revisei um pouco o que anotei.</p>
+    </article>
+    <article class="folha" id="pag-4" hidden>
+      <h2>Página 4</h2>
+      <p>É isso por hoje. Amanhã continuo os exercícios.</p>
+      <p>Abraços,<br>eu</p>
+    </article>
+  </div>
+
+  <p class="volta"><a href="../index.html">← Voltar à lista</a></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

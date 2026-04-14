@@ -1,0 +1,55 @@
+/* estilo bem simples, tipo trabalho de sala */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+  background: #f5f5dc;
+  color: #333;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+.sub {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.foto-pet {
+  margin: 20px 0;
+}
+
+.foto-placeholder {
+  width: 100%;
+  max-height: 360px;
+  overflow: hidden;
+  background: #c4a574;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #8b6914;
+}
+
+.foto-placeholder img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.links-uteis ul {
+  line-height: 1.8;
+}
+
+a {
+  color: #0645ad;
+}
+
+footer {
+  margin-top: 32px;
+  font-size: 0.9rem;
+}

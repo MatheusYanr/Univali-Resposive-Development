@@ -1,0 +1,64 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  max-width: 560px;
+  margin: 24px auto;
+  padding: 0 16px;
+  background: #e8e0d5;
+  color: #222;
+}
+
+.instrucao {
+  font-size: 0.95rem;
+}
+
+/* seletor estilo “botões de página” com hover */
+.seletor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.seletor-label {
+  font-weight: bold;
+}
+
+.pag-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #555;
+  background: #fff;
+  font-size: 1.1rem;
+  cursor: default;
+  border-radius: 4px;
+  transition: transform 0.15s, background 0.15s, box-shadow 0.15s;
+}
+
+.pag-btn:hover {
+  background: #ffd966;
+  transform: scale(1.12);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folhas {
+  background: #fffef8;
+  border: 1px solid #bbb;
+  padding: 24px;
+  min-height: 200px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.folha h2 {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0;
+}
+
+.volta {
+  margin-top: 24px;
+}
+
+a {
+  color: #0645ad;
+}

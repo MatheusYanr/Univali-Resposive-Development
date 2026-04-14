@@ -1,0 +1,101 @@
+/* combinador descendente: .menu-principal .lista-links */
+.menu-principal .lista-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0;
+  background: #2c3e50;
+}
+
+/* filho direto: ul > li */
+.lista-links > .item-menu {
+  margin: 0;
+}
+
+/* irmão adjacente: primeiro li + os seguintes recebem borda à esquerda */
+.lista-links > .item-menu + .item-menu {
+  border-left: 1px solid #4a6278;
+}
+
+/* link dentro do item do menu */
+.item-menu .link-nav {
+  display: block;
+  padding: 12px 20px;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+/* pseudo-classe + descendente */
+.item-menu .link-nav:hover {
+  background: #34495e;
+}
+
+/* página atual: body.pagina-inicio + main (combinador irmão geral ~ não serve aqui)
+   uso de body com classe + nav depois do header: header.topo ~ .menu-principal */
+.pagina-inicio .lista-links > .item-menu:first-child .link-nav {
+  background: #1abc9c;
+  color: #fff;
+}
+
+.pagina-hobbies .lista-links > .item-menu:nth-child(2) .link-nav {
+  background: #1abc9c;
+  color: #fff;
+}
+
+.pagina-contato .lista-links > .item-menu:nth-child(3) .link-nav {
+  background: #1abc9c;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.topo {
+  padding: 20px;
+  background: #fff;
+  border-bottom: 2px solid #bdc3c7;
+}
+
+.topo h1 {
+  margin: 0 0 8px 0;
+}
+
+/* combinador irmão adjacente: h1 logo após algo - aqui .topo p que vem depois do h1 */
+.topo h1 + p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.conteudo {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+/* parágrafos dentro de .conteudo que vêm depois do primeiro h2 */
+.conteudo h2 ~ p {
+  line-height: 1.6;
+}
+
+.rodape {
+  padding: 16px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.rodape .link-volta {
+  color: #2980b9;
+}
+
+.email-fake {
+  font-family: monospace;
+  background: #fff;
+  padding: 2px 6px;
+}
